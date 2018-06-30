@@ -1,5 +1,5 @@
-#用于标准化：极差标准化是一个向量或者array或者list
-
+#用于标准化：这里要求x是一个向量或者array或者list
+#极差标准化又叫做规范化、离差标准化等
 scalerange<-function(x){
   x<-as.vector(x)
   x_min<-min(x) 

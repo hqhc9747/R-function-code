@@ -1,0 +1,15 @@
+#用于标准化：极差标准化是一个向量或者array或者list
+
+
+scalerange<-function(x){
+  x<-as.vector(x)
+  x_min<-min(x) 
+  x_max<-max(x)
+  extreme<-(x_max-x_min)
+  y<-(x-x_min)/extreme
+  return(y)
+}
+
+#ex：
+x<-c(1,2,3,4,5,6)
+scalestand(x)
